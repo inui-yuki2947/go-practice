@@ -21,4 +21,17 @@ func main() {
 	fmt.Println(b1, b2)
 	b1[0] = 0
 	fmt.Println(b1, b2)
+
+	// 関数定義サンプル
+	fmt.Println(c1(2, 3))
+	fmt.Println(c2())
+}
+
+func c1(x, y int) int {
+	return x + y
+}
+
+func c2() (x int) {
+	x = 1
+	return
 }
