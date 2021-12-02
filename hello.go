@@ -25,6 +25,16 @@ func main() {
 	// 関数定義サンプル
 	fmt.Println(c1(2, 3))
 	fmt.Println(c2())
+
+	// 配列・スライスサンプル
+	var (
+		d1 [3]int
+		d2 []int
+	)
+	fmt.Println(d1, d2)
+	d1[0] = 100
+	d2 = append(d2, 100)
+	fmt.Println(d1, d2)
 }
 
 func c1(x, y int) int {
