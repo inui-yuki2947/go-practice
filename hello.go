@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/urfave/cli"
+)
 
 func main() {
 	fmt.Println("Hello, World!")
@@ -38,6 +41,10 @@ func main() {
 	d1[0] = 100
 	d2 = append(d2, 100)
 	fmt.Println(d1, d2)
+
+	fmt.Println("-----外部ライブラリサンプル-----")
+	app := cli.NewApp()
+	fmt.Println(app)
 }
 
 func c1(x, y int) int {
