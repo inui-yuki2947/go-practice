@@ -42,6 +42,13 @@ func main() {
 	d2 = append(d2, 100)
 	fmt.Println(d1, d2)
 
+	fmt.Println("-----構造体サンプル-----")
+	fmt.Println(Hoge{1, "aaa"})
+	// fmt.Println(Hoge{1}) コンパイルエラー
+	fmt.Println(Hoge{Hoge1: 1, Hoge2: "aaa"})
+	fmt.Println(Hoge{Hoge1: 1})
+	fmt.Println(Hoge{})
+
 	fmt.Println("-----外部ライブラリサンプル-----")
 	app := cli.NewApp()
 	fmt.Println(app)
@@ -54,4 +61,9 @@ func c1(x, y int) int {
 func c2() (x int) {
 	x = 1
 	return
+}
+
+type Hoge struct {
+	Hoge1 int
+	Hoge2 string
 }
