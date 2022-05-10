@@ -1,4 +1,4 @@
-# go-practice
+# practice-go
 
 ## 概要
 
