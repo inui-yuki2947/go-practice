@@ -6,6 +6,14 @@
 
 ## 実行例
 
+### 例1
+
 ```bash
 (cd sample1 && go run 01_variable.go)
+```
+
+### 例2
+
+```bash
+(cd zoo && go run main.go app.go)
 ```
