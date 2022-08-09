@@ -7,5 +7,5 @@
 ## 実行例
 
 ```bash
-(cd sample1 && go run hello.go)
+(cd sample1 && go run 01_variable.go)
 ```
