@@ -6,19 +6,19 @@ import (
 
 func main() {
 	fmt.Println("-----配列定義サンプル-----")
-	b1 := [3]int{1, 2, 3}
-	b2 := [...]int{1, 2, 3, 4, 5}
-	fmt.Println(b1, b2)
-	b1[0] = 0
-	fmt.Println(b1, b2)
+	var1 := [3]int{1, 2, 3}
+	var2 := [...]int{1, 2, 3, 4, 5}
+	fmt.Println(var1, var2)
+	var1[0] = 0
+	fmt.Println(var1, var2)
 
 	fmt.Println("-----配列・スライスサンプル-----")
 	var (
-		d1 [3]int
-		d2 []int
+		var3 [3]int
+		var4 []int
 	)
-	fmt.Println(d1, d2)
-	d1[0] = 100
-	d2 = append(d2, 100)
-	fmt.Println(d1, d2)
+	fmt.Println(var3, var4)
+	var3[0] = 100
+	var4 = append(var4, 100)
+	fmt.Println(var3, var4)
 }

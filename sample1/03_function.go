@@ -6,18 +6,19 @@ import (
 
 func main() {
 	fmt.Println("-----関数定義サンプル-----")
-	var c3 func(int, string) int
-	fmt.Println(c1(2, 3))
-	fmt.Println(c2)
-	fmt.Println(c2())
-	fmt.Println(c3)
+	fmt.Println(function1(2, 3))
+	fmt.Println(function2)
+	fmt.Println(function2())
+
+	var function3 func(int, string) int
+	fmt.Println(function3)
 }
 
-func c1(x, y int) int {
+func function1(x, y int) int {
 	return x + y
 }
 
-func c2() (x int) {
+func function2() (x int) {
 	x = 1
 	return
 }
