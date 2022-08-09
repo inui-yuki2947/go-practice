@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-import "./animals"
+import "main/animals"
 
 func main() {
 	fmt.Println(AppName())
